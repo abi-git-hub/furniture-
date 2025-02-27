@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gallery</title>
+        <link rel="stylesheet" href="C:\Users\User\Desktop\furniture\gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+       <!--top bar create..................................................................................................................-->
+
+       <div class="top-bar">
+        <span><i class="fa-solid fa-phone"></i>  +94 764706834 <i class="p">  +94 </i><i class="fa-regular fa-envelope"></i>  
+            <a href="tharushiabirandi@gmail.com">tharushiabirandi@gmail.com</a> <i class="p">  +94 7********************************************* </i></span>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+        <ul>
+            <li><a href=#><i class="fa-solid fa-magnifying-glass" onclick="myFunction()"></i></a></li>
+            <li><a href="c:\Users\User\Desktop\furniture\productDetails.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+        </ul>
+    </div>
+    <!--navigation bar.................................................................................................................-->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <lable for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </lable>
+            <h2>Abhirandi<br>Furniture</h2>
+            <ul>
+            <li><a href="home page.html">HOME</a></li>
+            <li><a href="about page.html">ABOUT-US</a></li>
+            <li><a href="product page.html">PRODUCTS <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="ul">
+                    <li><a href="product page.html">CHAIRS</a></li>
+                    <li><a href="product page.html">TABLES</a></li>
+                    <li><a href="product page.html">BEDS</a></li>
+                    <li><a href="product page.html">CABINETS</a></li>
+                    <li><a href="product page.html">DOORS</a></li>
+                    <li><a href="product page.html">NON-WOODEN FURNITURES</a></li>
+                </ul>
+            </li>
+            <li><a href="contact page.html">CONTACT</a></li>
+            <li><a href="c:\Users\User\Desktop\furniture\gallery.html">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section class="sec">
+            <div class="pic"><br><br>
+                <h2>GALLERY</h2>
+                <h3>
+                    <span>HOME|</span>
+                    <span>GALLERY</span>
+                </h3>
+            </div>
+        </section>
+
+
+        <!--image gallery...............................................................................................................-->
+        <br><br><br><br>
+        <h1 class="heeading">Our Gallery</h1><hr><br><br><br>
+        <div class="galleery">
+        <div class="galery">
+            <img src="g1.jpg" alt="rusl">
+            <img src="g2.jpg" alt="rusl">
+            <img src="g3.jpg" alt="rusl">
+            <img src="g4.jpg" alt="rusl">
+            <img src="g5.jpg" alt="rusl">
+            <img src="g6.jpg" alt="rusl">
+            <img src="g7.jpg" alt="rusl">
+            <img src="g8.jpg" alt="rusl">
+            <img src="g9.jpg" alt="rusl">
+            <img src="g10.jpg" alt="rusl">
+            <img src="g11.jpg" alt="rusl">
+            <img src="g12.jpg" alt="rusl">
+            <img src="g13.jpg" alt="rusl">
+            <img src="g14.jpg" alt="rusl">
+            <img src="g15.jpg" alt="rusl">
+            <img src="g16.jpg" alt="rusl">
+            <img src="g17.jpg" alt="rusl">
+            <img src="g18.jpg" alt="rusl">
+            <img src="g19.jpg" alt="rusl">
+            <img src="g20.jpg" alt="rusl">
+            <img src="g21.jpg" alt="rusl">
+            <img src="g22.jpg" alt="rusl">
+            <img src="g23.jpg" alt="rusl">
+            <img src="g24.jpg" alt="rusl">
+            <img src="g25.jpg" alt="rusl">
+            <img src="g26.jpg" alt="rusl">
+            <img src="g27.jpg" alt="rusl">
+            <img src="g28.jpg" alt="rusl">
+            <img src="g29.jpg" alt="rusl">
+            <img src="g30.jpg" alt="rusl">
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="g1.jpg" alt="rusl">
+        </div>
+    </div>
+
+
+        <!--footer create.............................................................................................................-->
+        <footer>
+            <div class="name">
+                <h2>Abhirandi Furniture</h2>
+            </div>
+            <div class="social">
+                <a href="whatsapp.svg"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="facebook.svg"><i class="fa-brands fa-facebook"></i></a>
+                <a href="twitter.svg"><i class="fa-brands fa-twitter"></i></i></a>
+                <a href="instagram.svg"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="botton">
+                <ul>
+                    <li><a href="home page.html">HOME</a></li>
+                    <li><a href="about page.html">ABOUT-US</a></li>
+                    <li><a href="product page.html">PRODUCTS</a></li>
+                    <li><a href="contact page.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright@2023 your company. All right reserved</p>
+            </div>
+        </footer>
+
+
+        <script>
+            document.querySelectorAll(".galleery img").forEach(image =>{
+                image.onclick = () =>{
+            document.querySelector(".popup-image").style.display = "block";
+            document.querySelector(".popup-image img").src = image.getAttribute("src");
+            }
+        });
+            document.querySelector(".popup-image span").onclick = () =>{
+            document.querySelector(".popup-image").style.display = "none"; 
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: linear-gradient(90deg, rgb(7, 7, 100), rgb(8, 8, 17), rgb(0,0,255), rgb(176, 176, 235));
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: burlywood;
+}
+.p{
+    color: burlywood;
+}
+.top-bar span{
+    margin: 0px 5px;
+}
+.top-bar .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #eeeeee;
+    border-radius: 30px;
+    color: #b2bec3;
+    font-size: 16px;
+    text-align: center;
+}
+.search-box a{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    border: #a34535;
+}
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar li{
+    margin: 0px 10px;
+}
+.top-bar a{
+    color: black;
+}
+
+/*nav bar.........*/
+nav{
+    background: rgb(117, 77, 3);
+    height: 80px;
+    width: 100%;
+    padding: 0 120px;
+}
+nav h2{
+    font-size: 30px;
+    font-family: arial;
+    color: rgb(255,255,255);
+    float: left;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(255,255,255);
+    font-size: 17px;
+    padding: 25px 30px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color:rgb(131, 104, 56);
+}
+nav ul li .ul{
+    position: absolute;
+    display: none;
+    background-color: rgb(0,0,0);
+    border-radius: 0px 0px 5px 5px;
+}
+nav ul li:hover .ul{
+    display: block;
+}
+nav ul li .ul li{
+    line-height: 1;
+    width: 190;
+    border-radius: 5px;
+    padding: 6px;
+}
+nav ul li .ul li a{
+    padding: 10px 16px;
+}
+nav ul li .ul li a:hover{
+    background-color: rgb(131, 104, 56);
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255,255,255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    h2{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(10, 10, 70);
+        top: 80px;
+        left: -100;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a{
+        background: none;
+        color: rgb(133, 115, 82);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/*picture add...................................................................................................................*/
+.sec{
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-image: url("w7.jpg");
+    background-repeat: no-repeat;
+    transition: 5s;
+    align-items: center;
+}
+.pic{
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+.pic h3{
+    text-align: center;
+}
+.pic h3 span:nth-child(1){
+    color: black;
+}
+.pic h3 span:nth-child(2){
+    color: red;
+}
+.contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactus .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactus .title h2{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: rgb(255,255,255);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact form h3{
+    color: rgb(8, 8, 17);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/*form box.............................................................................................................................*/
+.formbox{
+    position: relative;
+    width: 100%;
+}
+.formbox .row50{
+    display: grid;
+    gap: 20px;
+}
+.inputbox{
+    display: grid;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.formbox .row100 .inputbox{
+    width: 100%;
+}
+.inputbox span{
+    color: rgb(20, 20, 235);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputbox input{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid rgb(0,0,0);
+}
+textarea{
+    height: 150px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid rgb(0,0,0);
+}
+select{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid rgb(0,0,0);
+}
+.inputbox input[type="submit"]{
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    font-size: 18px;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.button{
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background-color: #806bcd;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.message .success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger{
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+.inputbox ::placeholder{
+    color: rgb(184, 181, 181);
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius : 6px;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 60px;
+    color: #333;
+    visibility: hidden;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50% -50%) scale(1);
+}
+.popup img{
+    width: 30%;
+    height: 62px;
+    margin-top: -50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius : 50%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #e02189;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+/*info form*/
+.info{
+    background: rgb(3, 3, 65);
+}
+.info h3{
+    color: rgb(255,255,255);
+}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infobox div span{
+    min-width: 40px;
+    height: 40px;
+    color: rgb(255,255,255);
+    display: flex;
+    background: rgb(0, 140, 255);
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infobox div p{
+    color: rgb(255,255,255);
+}
+.info .infobox div a{
+    color: rgb(255,255,255);
+}
+.sociall{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.sociall a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(0,0,255);
+    margin: 10px;
+    border-radius: 50%;
+}
+.sociall a li{
+    font-size: 2em;
+    color: rgb(0,0,0);
+    opacity: 0.9;
+}
+.sociall a:hover{
+    background-color: rgb(0,0,0);
+    transition: 0.5s;
+}
+.sociall a:hover i{
+    color: rgb(255,255,255);
+    transition: 0.5s;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*footer css.....*/
+footer{
+    box-sizing: border-box;
+    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 50%;
+    padding: 80px 20px 20px;
+}
+h2{
+    text-align: center;
+}
+.name h2{
+    color: rgb(255,255,255);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255,255,255);
+    margin: 10px;
+    border-radius: 50%;
+}
+.social a li{
+    font-size: 2em;
+    color: rgb(0,0,0);
+    opacity: 0.9;
+}
+.social a:hover{
+    background-color: rgb(0,0,0);
+    transition: 0.5s;
+}
+.social a:hover i{
+    color: rgb(255,255,255);
+    transition: 0.5s;
+}
+.botton{
+    margin: 30px 0;
+}
+.botton ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.botton ul li a{
+    color: rgb(255,255,255);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.botton ul li a:hover{
+    opacity: 1;
+    background: none;
+}
+.footerbottom{
+    background-color:rgb(19, 17, 17);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.footerbottom p{
+    color: rgb(255,255,255);
+}
+p{
+    font-size: 15px;
+}
+@media (max-width:700px){
+    .botton ul{
+        flex-direction: column;
+    }
+    .botton ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+

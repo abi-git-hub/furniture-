@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page</title>
+        <link rel="stylesheet" href="C:\Users\User\Desktop\furniture\home page.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+
+          <script src="C:\Users\User\Desktop\furniture\script.js" defer></script>
+    </head>
+    <body>
+        <!--top bar create..................................................................................................................-->
+
+        <div class="top-bar">
+            <span><i class="fa-solid fa-phone"></i>  +94 764706834 <i class="p">  +94 </i><i class="fa-regular fa-envelope"></i>  
+                <a href="tharushiabirandi@gmail.com">tharushiabirandi@gmail.com</a> <i class="p">  +94 7********************************************* </i></span>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+            </div>
+            <ul>
+                <li><a href=#><i class="fa-solid fa-magnifying-glass" onclick="myFunction()"></i></a></li>
+                <li><a href="c:\Users\User\Desktop\furniture\productDetails.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-star"></i></a></li>
+            </ul>
+        </div>
+        <!--navigation bar.................................................................................................................-->
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <lable for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </lable>
+                <h2>Abhirandi<br>Furniture</h2>
+                <ul>
+                <li><a href="home page.html">HOME</a></li>
+                <li><a href="about page.html">ABOUT-US</a></li>
+                <li><a href="product page.html">PRODUCTS <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="ul">
+                        <li><a href="product page.html">CHAIRS</a></li>
+                        <li><a href="product page.html">TABLES</a></li>
+                        <li><a href="product page.html">BEDS</a></li>
+                        <li><a href="product page.html">CABINETS</a></li>
+                        <li><a href="product page.html">DOORS</a></li>
+                        <li><a href="product page.html">NON-WOODEN FURNITURES</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact page.html">CONTACT</a></li>
+                <li><a href="c:\Users\User\Desktop\furniture\gallery.html">GALLERY</a></li>
+                <button class="login-btn">LOGIN</button>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="background">
+            <div class="hero-cotent">
+                <h1>Welcom to Our Interior Designs</h1>
+                <p>We create beautiful and functional spaces that reflect your persanality and style</p>
+                <a href="about page.html" class="btn">Get Started</a>
+            </div>
+        </section>
+
+    
+        <!--login form..............................................................................................................-->
+        <!--blur background-->
+        <div class="blur"></div>
+        <div class="form show-signup">
+            <span class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="form-box login">
+                <div class="form-details">
+                    <h2>Welcome Back</h2>
+                    <p>Please log in using your personal information to stay connected with us.</p>
+                </div>
+                <div class="form-content">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" id="username" required>
+                            <label>E-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="password" required>
+                            <label>Password</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                        <button type="Submit" onclick="login()">Login</button>
+                    </form>
+                        <div class="bottom-link">
+                            Don't have an account?
+                            <a href="#" id="signup-link">Signup</a>
+                        </div>
+                </div>
+            </div>
+
+
+    <!--signup form-->
+    
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create account</h2>
+                <p>To become a part of our community, please sign upusing your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>Signup</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Entre your E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>Create Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <lable for="policy">
+                            I agree the<a href="#">Terms $ conditions</a>
+                        </lable><br><br>
+                    </div>
+                    <button type="Submit">Sign Up</button>
+                </form>
+                    <div class="bottom-link">
+                        Already have an account?
+                        <a href="#" id="login-link">Login</a>
+                    </div>
+            </div>
+        </div>
+</div>
+
+        <!--welcome statement...........................................................................................................-->
+        <div class="welcome"><br>
+        <h3 class="w">"Welcome to our furniture store, where style meets comfort!"</h3><br>
+        <p class="wel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discover a wide range of 
+            beautifully crafted pieces that will transform your space into a haven of relaxation and 
+            elegance. From stunning &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood sofas and luxurious beds to exquiste 
+            dining sets and functional storage solutions, we have everythng
+            you need&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to create 
+            your dream home. Our dedicated team of experts is ready to assist you in finding the perfect&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;furniture that 
+            suits your taste and lifestyle.... Come on in and let us help you make &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your house
+             a home with our exeptional selection of furniture!!!
+        </p><br><br>
+        <div class="lo">
+        <img src="alogo.jpg" alt="rusl" width="100" height="100">
+        </div><br>
+        <h3 class="w">.......Abhirandi Furniture.......</h3><br>
+        </div>
+
+            
+            
+            <!--product categories..........................................................................................................-->
+            <br><br><br><br>
+            <h1 class="heeading">Our Products</h1><hr>
+            
+        <div class="gallery">
+            <div class="content">
+                <img src="c1.jpg">
+                <h3 class="h3">Chairs</h3>
+                <p>Upto 20% off</p>
+                <ul class="ul">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="product page.html"><button class="buy-1">Shop Now</button></a>
+            </div>
+
+            <div class="content">
+                <img src="desk.jpg">
+                <h3 class="h3">Tables</h3>
+                <p>Upto 20% off</p>
+                <ul class="ul">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="product page.html"><button class="buy-2">Shop Now</button></a>
+            </div>
+
+            <div class="content">
+                <img src="cabinet.png">
+                <h3 class="h3">Cabinets</h3>
+                <p>Upto 20% off</p>
+                <ul class="ul">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="product page.html"><button class="buy-3">Shop Now</button></a>
+            </div>
+
+            <div class="content">
+                <img src="bed.png">
+                <h3 class="h3">Beds</h3>
+                <p>Upto 20% off</p>
+                <ul class="ul">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="product page.html"><button class="buy-4">Shop Now</button></a>
+            </div>
+
+            <div class="content">
+                <img src="door.jpg"><br><br>
+                <h3 class="h3">Doors<br></h3>
+                <p>Upto 20% off</p>
+                <ul class="ul">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="product page.html"><button class="buy-2">Shop Now</button></a>
+            </div>
+
+            <div class="content">
+                <img src="non-wooden.png">
+                <h3 class="h3">Non-wooden Furnitures</h3>
+                <p>Upto 10% off</p>
+                <ul class="ul">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+                <a href="product page.html"><button class="buy-5">Shop Now</button></a>
+            </div>
+        </div>
+
+        <hr>
+        <section class="wall">
+            <div class="wall1">
+                <h1>
+                    <span>OFFER</span> 
+                    <span>10%</span>
+                </h1>
+                <p>Abhirandi Furniture during the new year we have many special price reductions for you..........</p>
+                <h2>You also came ToDaY!!!!</h2>
+            </div>
+        </section><br><br><br><br>
+
+
+        <!--image gallery...................................................................................................................-->
+        <h1 class="heeading">Our Gallery</h1><hr><br><br>
+        <div class="galleery">
+        <div class="galery">
+            <div class="image"><img src="g1.jpg" alt="rusl"></div>
+            <div class="image"><img src="g2.jpg" alt="rusl"></div>
+            <div class="image"><img src="g3.jpg" alt="rusl"></div>
+            <div class="image"><img src="g4.jpg" alt="rusl"></div>
+            <div class="image"><img src="g5.jpg" alt="rusl"></div>
+            <div class="image"><img src="g6.jpg" alt="rusl"></div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="g1.jpg" alt="rusl">
+        </div>
+    </div>
+        <a href="c:\Users\User\Desktop\furniture\gallery.html"><button class="btn-n">View more.</button></a>
+        <br><br><br>
+
+        <!--footer create..................................................................................................................-->
+        <footer>
+            <div class="name">
+                <h2>Abhirandi Furniture</h2>
+            </div>
+            <div class="social">
+                <a href="http://wa.me/+94764706834"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="facebook.svg"><i class="fa-brands fa-facebook"></i></a>
+                <a href="twitter.svg"><i class="fa-brands fa-twitter"></i></i></a>
+                <a href="instagram.svg"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="botton">
+                <ul>
+                    <li><a href="home page.html">HOME</a></li>
+                    <li><a href="about page.html">ABOUT-US</a></li>
+                    <li><a href="product page.html">PRODUCTS</a></li>
+                    <li><a href="contact page.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright@2023 your company. All right reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>

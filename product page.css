@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: burlywood;
+}
+.p{
+    color: burlywood;
+}
+.top-bar span{
+    margin: 0px 5px;
+}
+.top-bar .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #eeeeee;
+    border-radius: 30px;
+    color: #b2bec3;
+    font-size: 16px;
+    text-align: center;
+}
+.search-box a{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    border: #a34535;
+}
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar li{
+    margin: 0px 10px;
+}
+.top-bar a{
+    color: black;
+}
+
+/*nav bar........................................................................................................................*/
+nav{
+    background: rgb(117, 77, 3);
+    height: 80px;
+    width: 100%;
+    padding: 0 120px;
+}
+nav h2{
+    font-size: 30px;
+    font-family: arial;
+    color: rgb(255,255,255);
+    float: left;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(255,255,255);
+    font-size: 17px;
+    padding: 25px 30px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color:rgb(131, 104, 56);
+}
+nav ul li .ul{
+    position: absolute;
+    display: none;
+    background-color: rgb(0,0,0);
+    border-radius: 0px 0px 5px 5px;
+}
+nav ul li:hover .ul{
+    display: block;
+}
+nav ul li .ul li{
+    line-height: 1;
+    width: 190;
+    border-radius: 5px;
+    padding: 6px;
+}
+nav ul li .ul li a{
+    padding: 10px 16px;
+}
+nav ul li .ul li a:hover{
+    background-color: rgb(131, 104, 56);
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255,255,255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    h2{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(10, 10, 70);
+        top: 80px;
+        left: -100;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a{
+        background: none;
+        color: rgb(133, 115, 82);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/*picture add...................................................................................................................*/
+.sec{
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-image: url("w1.jpg");
+    background-repeat: no-repeat;
+    transition: 5s;
+    align-items: center;
+}
+.pic{
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+.pic h3{
+    text-align: center;
+}
+.pic h3 span:nth-child(1){
+    color: black;
+}
+.pic h3 span:nth-child(2){
+    color: red;
+}
+/*product page start..............................................................................................................*/
+h2{
+    font-size: 40px;
+    color: black;
+    font-weight: 550;
+}
+hr{
+    width: 1500px;
+    background-color: rgb(165, 99, 13);
+    height: 5px;
+}
+.product{
+    padding: 10px 8% 110px;
+    height: 400px;
+}
+.card-content{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    align-items: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+}
+.text-container .row{
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.row img{
+    width: 75%;
+    display: flex;
+}
+.card-body{
+    padding: 10px;
+}
+.card-body h3{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    color: green;
+    text-shadow: 0px 1px 1px black;
+}
+.card-text p{
+    font-weight: 400;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.card-body h5{
+    margin-top: 5px;
+    font-size: 15px;
+}
+.card-body button{
+    width: 120px;
+    height: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 550;
+    margin-top: 8px;
+    background: transparent;
+    color: green;
+    border-radius: 5px;
+    border: 2px solid green;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.card-body button:hover{
+    background: green;
+    color: white;
+}
+@media(max-width:920px){
+    .card-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*product categories..............................................................................................................*/
+#product1{
+    text-align: center;
+    background: white;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 20%;
+    height: 350px;
+    min-width: 250px;
+    padding: 0px 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px black;
+    margin: 30px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px black;
+}
+#product1 .pro img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: gray;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: orange;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: green;
+}
+#product1 .pro #btn3 button{
+    width: 120px;
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 550;
+    margin-top: 8px;
+    background: transparent;
+    color: green;
+    border-radius: 5px;
+    border: 2px solid green;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#product1 .pro #btn3 button:hover{
+    background: green;
+    color: white;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(7, 95, 36);
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.986);
+    border: 2px solid rgb(16, 26, 1);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+/*......................................................................................................................................*/
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .products-preview .preview{
+    display: flex;
+    padding:1rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 50rem;
+    height: 450px;
+ }
+ 
+ .products-preview .preview.active{
+    display: inline-block;
+ }
+ 
+ .products-preview .preview img{
+    height: 26rem;
+    width: 350px;
+ }
+ 
+ .products-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 4rem;
+ }
+ 
+ .products-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+ }
+ 
+ .products-preview .preview h2{
+    color:#444;
+    padding: 0.7rem 0;
+    margin: 0.2;
+    font-size: 30px;
+ }
+ .products-preview .preview h4{
+    color: rgb(148, 146, 146);
+ }
+ 
+ .products-preview .preview p{
+    line-height: 1;
+    padding:1rem 0;
+    font-size: 1rem;
+    color:rgb(15, 15, 109);
+ }
+ .products-preview .preview .p{
+    color: #111;
+    font-weight: bold;
+ }
+ 
+ .products-preview .preview .button a{
+    padding:0.5rem;
+    font-size: 1.1rem;
+    color:#444;
+ }
+ 
+ .products-preview .preview .button a{
+    background: #444;
+    color:#fff;
+ }
+ 
+ .products-preview .preview .button a:hover{
+    background: #111;
+ }
+
+
+/*footer css...............................................................................................................................*/
+footer{
+    box-sizing: border-box;
+    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 50%;
+    padding: 80px 20px 20px;
+}
+h2{
+    text-align: center;
+}
+.name h2{
+    color: rgb(255,255,255);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255,255,255);
+    margin: 10px;
+    border-radius: 50%;
+}
+.social a li{
+    font-size: 2em;
+    color: rgb(0,0,0);
+    opacity: 0.9;
+}
+.social a:hover{
+    background-color: rgb(0,0,0);
+    transition: 0.5s;
+}
+.social a:hover i{
+    color: rgb(255,255,255);
+    transition: 0.5s;
+}
+.botton{
+    margin: 30px 0;
+}
+.botton ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.botton ul li a{
+    color: rgb(255,255,255);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.botton ul li a:hover{
+    opacity: 1;
+    background: none;
+}
+.footerbottom{
+    background-color:rgb(19, 17, 17);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.footerbottom p{
+    color: rgb(255,255,255);
+}
+p{
+    font-size: 15px;
+}
+@media (max-width:700px){
+    .botton ul{
+        flex-direction: column;
+    }
+    .botton ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+

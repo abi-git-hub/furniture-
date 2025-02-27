@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    /*background: url("wall6.jpg");*/
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    background-color: transparent;
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.item .logo{
+    color: white;
+    font-size: 30px;
+}
+.text-item{
+    font-size: 40px;
+    line-height: 1;
+}
+.text-item span{
+    font-size: 40px;
+}
+.text-item p{
+    font-size: 16px;
+    margin: 20px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.social a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255,255,255);
+    margin: 10px;
+    border-radius: 50%;
+}
+.social a li{
+    font-size: 2em;
+    color: rgb(0,0,0);
+    opacity: 0.9;
+}
+.social a:hover{
+    background-color: rgb(0,0,0);
+    transition: 0.5s;
+}
+.social a:hover i{
+    color: rgb(255,255,255);
+    transition: 0.5s;
+}
+.container .login-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: white;
+    background-color: transparent;
+}
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+}
+.form-box .inputbox{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    position: relative;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+.inputbox lable{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+.inputbox .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.remember-text{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-text label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-text a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-text a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: burlywood;
+    box-shadow: rgb(0,0,0.4);
+}
+.create-text{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-text p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.create-text p a:hover{
+    text-decoration: underline;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background: url(w1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*.blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+    transition: 0.1s ease;
+}
+.show-popup .blur{
+    opacity: 1;
+    pointer-events: auto;
+}
+.form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: rgb(255,255,255);
+    border: 2px solid rgb(255,255,255);
+    transform: translate(-50%, -100%);
+}
+.show-popup .form{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+}
+.form .close-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgb(218, 148, 62);
+    cursor: pointer;
+}
+.form .form-box{
+    display: flex;
+}
+.form-box .form-details{
+    max-width: 330px;
+    width: 100%;
+    color: rgb(255,255,255);
+    display: flex;
+    padding: 0 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("aa.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.login .form-details{
+    background: url("aa.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.signup .form-details{
+    background: url("bb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.form-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-box .form-contact{
+    width: 100%;
+    padding: 35px;
+}
+form .input-box{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 50px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.input-box input:focus{
+    border-color: rgb(218, 148, 62);
+}
+form .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: rgb(182, 179, 179);
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    color: rgb(216, 155, 81);
+    font-size: 0.75rem;
+    top: 5px;
+}
+.form-box a{
+    color: rgb(228, 157, 70);
+    text-decoration: none;
+}
+.form-box a:hover{
+    text-decoration: underline;
+}
+.form-box :where(.forgot-password, .policy-text){
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: rgb(255,255,255);
+    cursor: pointer;
+    background: rgb(236, 162, 71);
+    transition: 0.2s ease;
+}
+form button:hover{
+    background: rgb(51, 167, 167);
+}
+.form-box .bottom-link{
+    text-align: center;
+}
+.form .signup,
+.form .show-signup .login{
+    display: none;
+}
+.form .show-signup .signup{
+    display: flex;
+}
+.signup .policy-text{
+    display: flex;
+    align-items: center;
+}
+.signup .policy-text input{
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+}
+
+@media(max-width: 760px){
+    .form{
+        width: 95%;
+    }
+    .form-box .form-details{
+        display: none;
+    }
+    .form-box .form-contact{
+        padding: 30px 20px;
+    }
+}*/
+
+
+/*#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px black;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px black;
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: gray;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: orange;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: green;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: white;
+    font-weight: 500;
+    color: green;
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}*/
+
+
